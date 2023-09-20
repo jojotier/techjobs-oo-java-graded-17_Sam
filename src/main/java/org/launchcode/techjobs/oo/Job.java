@@ -13,6 +13,7 @@ public class Job {
     private PositionType positionType;
     private CoreCompetency coreCompetency;
 
+
     public Job(){
         id = nextId;
         nextId++;
@@ -28,6 +29,75 @@ this.coreCompetency = coreCompetency;
 
 
 }
+
+    @Override
+    public String toString() {
+        if(id == 0){
+            return System.lineSeparator() +
+                    "ID: Data not available" + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        } else if(name == null){
+            return System.lineSeparator() +
+                    "ID: " + id + System.lineSeparator() +
+                    "Name: Data not available" + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        } else if(employer == null){
+            return System.lineSeparator() +
+                    "ID: " + id + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: Data not available" + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        } else if(location == null){
+            return System.lineSeparator() +
+                    "ID: " + id + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: Data not available" + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        } else if(positionType == null){
+            return System.lineSeparator() +
+                    "ID: " + id + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: Data not available" + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        } else if(coreCompetency == null){
+            return System.lineSeparator() +
+                    "ID: " + id + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: Data not available"
+                    + System.lineSeparator();
+        }
+        else {
+            return System.lineSeparator() +
+                    "ID: " + id + "\n" +
+                    "Name: " + name + "\n" +
+                    "Employer: " + employer + "\n" +
+                    "Location: " + location + "\n" +
+                    "Position Type: " + positionType + "\n" +
+                    "Core Competency: " + coreCompetency
+                    + System.lineSeparator();
+        }
+    }
 
     public String getName() {
         return name;
