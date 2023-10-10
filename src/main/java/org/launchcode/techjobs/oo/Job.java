@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Job {
+public class Job extends JobField {
 
     private int id;
     private static int nextId = 1;
@@ -32,14 +32,34 @@ this.coreCompetency = coreCompetency;
 
     @Override
     public String toString() {
-        String blankData = "Data not found.";
 
-       return System.lineSeparator() + "ID: " + (id == 0 ? blankData : id) +
-               System.lineSeparator() + "Name: " + (name == null ? blankData : name) +
-               System.lineSeparator() + "Employer: " + (employer == null ? blankData : employer) +
-               System.lineSeparator() + "Location: " + (location == null ? blankData : location) +
-               System.lineSeparator() + "Position Type: " + (positionType == null ? blankData : positionType) +
-               System.lineSeparator() + "Core Competency: " + (coreCompetency == null ? blankData : coreCompetency) +
+        if(id == 0){
+            super.setValue("Data not found.");
+        }
+        if(name == null){
+            super.setValue("Data not found.");
+        }
+        if(employer == null){
+            super.setValue("Data not found.");
+        }
+        if(location == null){
+            super.setValue("Data not found.");
+        }
+        if(positionType == null){
+            super.setValue("Data not found.");
+        }
+        if(coreCompetency == null){
+            super.setValue("Data not found.");
+        }
+
+
+
+       return System.lineSeparator() + "ID: " + id +
+               System.lineSeparator() + "Name: " + name +
+               System.lineSeparator() + "Employer: " + employer +
+               System.lineSeparator() + "Location: " + location +
+               System.lineSeparator() + "Position Type: " + positionType +
+               System.lineSeparator() + "Core Competency: " + coreCompetency +
                System.lineSeparator();
     }
 
