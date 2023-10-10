@@ -2,7 +2,7 @@ package org.launchcode.techjobs.oo;
 
 import java.util.Objects;
 
-public class Job extends JobField {
+public class Job {
 
     private int id;
     private static int nextId = 1;
@@ -33,23 +33,20 @@ this.coreCompetency = coreCompetency;
     @Override
     public String toString() {
 
-        if(id == 0){
-            super.setValue("Data not found.");
+        if(name.isEmpty() || name == null){
+            name = "Data not available";
         }
-        if(name == null){
-            super.setValue("Data not found.");
+        if(employer.getValue().isEmpty() || employer.getValue() == null){
+            employer.setValue("Data not available");
         }
-        if(employer == null){
-            super.setValue("Data not found.");
+        if(location.getValue().isEmpty() || location.getValue() == null){
+            location.setValue("Data not available");
         }
-        if(location == null){
-            super.setValue("Data not found.");
+        if(positionType.getValue().isEmpty() || positionType.getValue() == null){
+            positionType.setValue("Data not available");
         }
-        if(positionType == null){
-            super.setValue("Data not found.");
-        }
-        if(coreCompetency == null){
-            super.setValue("Data not found.");
+        if(coreCompetency.getValue().isEmpty() || coreCompetency.getValue() == null){
+            coreCompetency.setValue("Data not available");
         }
 
 

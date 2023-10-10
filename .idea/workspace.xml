@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Completed task 4!" />
+    <list default="true" id="59ff47a6-ece6-4e2e-b777-6247aa1f282e" name="Changes" comment="Updated the Job.java file with Madison's suggestions!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/launchcode/techjobs/oo/Job.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +60,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.TestTaskFour.testTestJobsForEqualityExists">
+  <component name="RunManager" selected="Gradle.TestTaskFive">
     <configuration name="JobTest.testJobConstructorSetsAllFields" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,7 +109,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="JobTest.testSettingJobId" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TestTaskFive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.launchcode.techjobs.oo.JobTest.testSettingJobId&quot;" />
+            <option value="&quot;org.launchcode.techjobs.oo.TestTaskFive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,20 +194,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.TestTaskFive" />
       <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
       <item itemvalue="Gradle.JobTest.testJobsForEquality" />
       <item itemvalue="Gradle.TestTaskFour.testTestJobConstructorSetsAllFieldsExists" />
       <item itemvalue="Gradle.TestTaskFour.testTestJobsForEqualityExists" />
-      <item itemvalue="Gradle.JobTest.testSettingJobId" />
       <item itemvalue="JUnit.JobTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TestTaskFive" />
         <item itemvalue="Gradle.TestTaskFour.testTestJobsForEqualityExists" />
         <item itemvalue="Gradle.JobTest.testJobsForEquality" />
         <item itemvalue="Gradle.TestTaskFour.testTestJobConstructorSetsAllFieldsExists" />
         <item itemvalue="Gradle.JobTest.testJobConstructorSetsAllFields" />
-        <item itemvalue="Gradle.JobTest.testSettingJobId" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +252,23 @@
       <option name="project" value="LOCAL" />
       <updated>1695071505787</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updated the Job.java file with a new toString method as per Richmond's suggestions!">
+      <option name="closed" value="true" />
+      <created>1696550591738</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696550591738</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Updated the Job.java file with Madison's suggestions!">
+      <option name="closed" value="true" />
+      <created>1696945720466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696945720467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -257,7 +276,9 @@
     <MESSAGE value="Completed most of task 3- can't seem to get the new equals() and hashcode working" />
     <MESSAGE value="Completed task 3!" />
     <MESSAGE value="Completed task 4!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed task 4!" />
+    <MESSAGE value="Updated the Job.java file with a new toString method as per Richmond's suggestions!" />
+    <MESSAGE value="Updated the Job.java file with Madison's suggestions!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated the Job.java file with Madison's suggestions!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
